@@ -38,6 +38,7 @@ which may cause issues with lsp-mode, I recommend using [[https://github.com/Jul
 AOT compile LanguageServer.jl into your julia image. Something like:
 
 #+BEGIN_EXAMPLE julia
+  julia> using Pkg
   julia> Pkg.add("PackageCompiler")
   julia> using PackageCompiler
   julia> create_sysimage(:LanguageServer, sysimage_path="/path/to/languageserver.so")
